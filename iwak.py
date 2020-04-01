@@ -6,8 +6,7 @@ from getpass import getpass
 import datetime
 import time
 
-print('\n>>> E-ATTEND UNTUK E-LEARNING <<<')
-print('By: Olympians\n')
+print('\n>>> E-ATTEND UNTUK E-LEARNING v0.1 (beta) <<<')
 
 username = input('Username: ')
 password = getpass()
