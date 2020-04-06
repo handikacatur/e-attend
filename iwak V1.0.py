@@ -1,10 +1,10 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from getpass import getpass
 import platform
 import win10toast
-from getpass import getpass
 import datetime
 import time
+import sys
 
 print('\n>>> E-ATTEND UNTUK E-LEARNING v1.0 (beta) <<<')
 
@@ -21,23 +21,18 @@ def toaster(msg):
 def initChrome():
     global driver
 
-    # initiating chrome options
-    chrome_options = Options()
-    # chrome_options.add_argument('--disable-gpu')
-    # chrome_options.add_argument('--headless')
-
     # initiate headless chrome
+    toaster('Initiating headless Chrome')
     if 'Windows' in platform.system():
-        driver = webdriver.Chrome('./webdrivers/chromedriver.exe', options=chrome_options)
+        driver = webdriver.PhantomJS('./webdrivers/phantomjs.exe')
     elif 'Linux' in platform.system():
-        chrome_options.add_argument('--no-sandbox')
-        driver = webdriver.Chrome('./webdrivers/chromedriver', options=chrome_options)
+        driver = webdriver.PhantomJS('./webdrivers/phantomjs')
 
-def getUserInfo():
+def getUserInfo(inf):
     global username
     global password
-    username = input('Username: ')
-    password = getpass()
+    username = inf[1]
+    password = inf[2]
 
 def doLogin():
     # getting the username and password forms
@@ -165,10 +160,10 @@ def checkAttendance():
         else:
             getStatus()
                 
-    
+toaster('program is running on background')
 
 # getting user info
-getUserInfo()
+getUserInfo(sys.argv)
 
 # initiate the driver
 initChrome()
