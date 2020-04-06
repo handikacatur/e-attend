@@ -1,19 +1,14 @@
-# E-Attendance v0.1 (beta)
+# E-Attendance v1.0
 
-# TOLONG DIBACA YA ANJAY
+## Feature
+1. Headless Browser
+2. Windows10 notification
+3. Better error handling
+4. Program running in background
 
-## cara menggunakan
-1. Install selenium dengan cara: pip install selenium
-2. Wajib punya python yang terbaru. Soalnya gatau kalo di python versi sebelumnya bakalan jalan normal atau enggak. Intinya update python lu.
-3. Pastiin selenium udah terinstall
-4. Jalanin iwak.py dengan cara: python iwak.py
-5. Masukin Username sama Password sister lu. Kalo passwordnya ga muncul pas diketik, emang gw buat kek gitu. Kalo dimunculin ga aman.
-5. Tinggal liat program berjalan
-6. Lepinya jangan sampe sleep biar programnya tetep jalan.
-
-# Note Penting
-## Pas hari pertama sampai hari kedua atau ketiga tolong programnya diawasi. Kalo hari pertama sampai kedua program berjalan normal tanpa error, hari selanjutnya boleh ga diawasi.
-## Kalo ada error liat di browsernya yang ga jalan dimana, laporin ke gw & lu harus absen manual dulu.
+## Note Penting
+### Pas hari pertama sampai hari kedua atau ketiga tolong programnya diawasi. Kalo hari pertama sampai kedua program berjalan normal tanpa error, hari selanjutnya boleh ga diawasi.
+### Kalo ada error liat di browsernya yang ga jalan dimana, laporin ke gw & lu harus absen manual dulu.
 
 # Mau ngasi gw support?
 1. Beliin gw kopi boleh.
